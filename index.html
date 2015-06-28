@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
 
 <meta name="p:domain_verify" content="7231d800a564c440a4d87fac03552d28"/>
     
@@ -9,7 +9,8 @@
 
 	<title>Satyajeet Vishwakarma</title>
 	
-	<link rel='stylesheet' href='/static/css/page.css'/>
+	<style type="text/css">figure {margin: 0;}</style>
+<link rel='stylesheet' href='/static/css/page.css'/>
 	<link rel='stylesheet' href='/static/css/icomoon/style.css'/>
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -43,7 +44,6 @@ html, body, #__theme_root, #__container1 {
 	width: 100%;
 	height: 100%;
 	margin: 0px;
-	background-image="http://i.imgur.com/l96EXHD.jpg?1?1256";
 }
 img {
 	max-width: 100%;
@@ -57,11 +57,10 @@ body {
 a {
 	color: #e22;
 }
-body
-  {
-    
-<background-image="http://i.imgur.com/l96EXHD.jpg?1?1256"> 
-
+body { background-image:url('http://i.imgur.com/l96EXHD.jpg?1?1256'); background-repeat:no-repeat; }
+ </style> 
+	<style>img {
+    max-height: 300px;
 
 
 }
@@ -110,21 +109,7 @@ h1 {
 }
 #container a {
     text-decoration: none;
-    
 }
-
-<div class="homepage-hero-module">
-    <div class="video-container">
-        <div class="filter"></div>
-        <video autoplay loop class="fillWidth">
-            <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Coverr-lamp.mp4 type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Coverr-lamp.mp4 type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-        </video>
-        <div class="poster hidden">
-            <img src="PATH_TO_JPEG" alt="">
-        </div>
-    </div>
-</div>
 
 //*.product-hunt {
     color: #fdd60b;
@@ -147,9 +132,159 @@ h1 {
 <head>
 <meta name="google-site-verification" content="Voq9THCf0AhBUiNWbt7bIJQFbU9TCgccH3N7Sax786Q" />
 <title> My title </title>
+<link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=s18v" />
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=a4169182721d644dacd145af89115b95"></script>
+
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:title" content="s18v" /><meta property="og:url" content="http://s18v.tumblr.com/?og=1" /><meta property="og:description" content="Satyajeet Vishwakarma" /><meta property="og:type" content="tumblr-feed:tumblelog" /><meta property="og:image" content="http://assets.tumblr.com/images/default_avatar/pyramid_closed_128.png" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=s18v" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=s18v" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:site" content="tumblr" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="s18v" /><meta name="twitter:description" content="Satyajeet Vishwakarma" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=s18v&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=s18v&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=s18v&amp;referrer=twitter-cards" />
+
 </head> 
 <body>
 page contents
+<!-- BEGIN TUMBLR CODE --><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+        var addthis_enabled = false;
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    postATMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    postATMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://secure.assets.tumblr.com/analytics.html?f65f173ecd0610e1ad2f9930f8476598#" + 
+                              "http://s18v.tumblr.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/?route=%2F'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+        function postATMessage() {
+            if (addthis_enabled && analytics_iframe_loaded) {
+                analytics_frame.contentWindow.postMessage('enable_addthis', analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+    })();
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1433175165&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvczE4di50dW1ibHIuY29tXC8iLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvIn0=&U=KEOFNNDNIG&K=d7b2c977becec6bc7bc5c2064d937b0d12df5f3a2de5c8ccf7b4829cb6005dd5&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1433175165&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvczE4di50dW1ibHIuY29tXC8iLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvIiwibm9zY3JpcHQiOjF9&U=KEOFNNDNIG&K=ff96398b5c2f90c8a340c6ea19fe0505572be6064a1d95b04a44fff676b51b59&R="></noscript><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=52f4655fc08c33e92bbf84738fc9cc2c';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><script>
+                    (function() {
+                        var s = document.createElement('script');
+                        var el = document.getElementsByTagName('script')[0];
+                        s.src = ('https:' == document.location.protocol ? 'https://s' : 'http://l') + '.yimg.com/ss/rapid-3.18.1.js';
+                        s.onload = function(){
+                            var YAHOO = window.YAHOO;
+                            if (YAHOO) {
+                                var keys = {
+                                    pd:'/',
+                                    _li:0,
+                                    b_id:215844143,
+                                    i_rad:0,
+                                    i_strm:0,
+                                    test_id: 'OLD' // version bucket
+
+                                };
+                                var conf = {
+                                                                        spaceid:1197716038,
+                                    client_only:1,
+                                    yql_enabled:false,
+                                    keys:keys,
+                                    nol:1
+                                };
+                                YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+                            }
+                        };
+                        el.parentNode.insertBefore(s, el);
+                    })();
+                </script><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=52f4655fc08c33e92bbf84738fc9cc2c';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><iframe id="tumblr_controls" class="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" src="https://secure.assets.tumblr.com/assets/html/iframe/o.html?_v=632df187c45692a395b9bdb9757ebc88#src=http%3A%2F%2Fs18v.tumblr.com%2F&amp;lang=en_US&amp;name=s18v&amp;brag=false&amp;avatar=http%3A%2F%2Fassets.tumblr.com%2Fimages%2Fdefault_avatar%2Fpyramid_closed_64.png&amp;title=s18v&amp;url=http%3A%2F%2Fs18v.tumblr.com%2F&amp;page_slide=slide"></iframe>
+<div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://assets.tumblr.com/assets/html/iframe/teaser.html?_v=6a33f3ee06c07178c64ed6fe0be16514#src=http%3A%2F%2Fs18v.tumblr.com%2F&amp;lang=en_US&amp;name=s18v&amp;brag=false&amp;avatar=http%3A%2F%2Fassets.tumblr.com%2Fimages%2Fdefault_avatar%2Fpyramid_closed_64.png&amp;title=s18v&amp;url=http%3A%2F%2Fs18v.tumblr.com%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=db9596e1abe1723e9ab84faf3f91929b");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
 </body>
 </html>
 
@@ -266,7 +401,7 @@ page contents
 
 </div>
 <h1>
-<span id="name">Satyajeet Vishwakarma </span>
+<span id="name">Satyajeet Vishwakarma </span>
 </h1>
 
 
